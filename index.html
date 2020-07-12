@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+  body {
+  background-image: url(background/Green.jpg);
+  background-size: cover;
+  font-family: trajan;
+  font-weight: bold;
+  width: 50%;
+}
+
+.container {
+  width: 80%;
+  height: 40px;
+  position: relative;
+  top: 40px;
+  margin: 0 auto;
+}
+}
+.nav-start {
+  position: relative;
+}
+.nav-button {
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-home: 1;
+  top: 40px;
+  right: 100px;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-button .fa {
+  border: 5px solid white;
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+}
+ 
+
+.nav-menu ul li {
+  list-style: none;
+  font-family: monospace;
+  font-weight: 300;
+  color: black;
+}
+
+.nav-menu {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: #fff;
+  height: 100%;
+  transform: skewX(0deg) translate(100%,0);
+  transform-origin: top right;
+  transition: all .2s ease-in;
+  z-home: -1;
+}
+.nav-menu ul {
+  transform: skewX(-8deg);
+  transform-origin: top left;
+  position: fixed;
+  right: 120px;
+  top: 120px;
+  width: 400px;
+  text-align: right;
+}
+.nav-menu ul li {
+  position: relative;
+  z-home: 999;
+  font-size: 40px;
+  color: black;
+  line-height: 120px;
+}
+.nav-menu ul li  a {
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+.nav-menu.active {
+  transform: skewX(8deg) translate(0,0);
+    
+}
+
+.nav-menu li {
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all .0s ease-in .3s;
+  
+}
+.nav-menu.active li {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: all .2s ease-in 0s;
+}
+.nav-menu.active li:nth-child(1) {
+  transition-delay: .3s;
+}
+.nav-menu.active li:nth-child(2) {
+  transition-delay: .4s;
+}
+.nav-menu.active li:nth-child(3) {
+  transition-delay: .5s;
+}
+.nav-menu.active li:nth-child(4) {
+  transition-delay: .6s;
+}
+.nav-menu.active li:nth-child(5) {
+  transition-delay: .7s;
+}
+.nav-menu.active li:nth-child(6) {
+  transition-delay: .8s;
+}
+
+.Me h1{
+  margin-top: 178px;
+  text-transform: uppercase;
+  font-family: trajan;
+  font-size: 60px;
+  letter-spacing: 4px;
+  color: white;
+} 
+
+span{
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: trajan;
+  color: honeydew;
+  font-weight: bold;
+
+}
+
+@media (max-width: 1000px) {
+
+body {
+  background-image: url(background/Green.jpg);
+  background-size: cover;
+  height: 100vh;
+  font-family: trajan;
+  font-weight: bold;
+  width: 20%;
+}
+
+.nav-menu {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  background: #fff;
+  height: 100%;
+  transform: skewX(0deg) translate(100%,0);
+  transform-origin: top right;
+  transition: all .2s ease-in;
+  z-home: -1;
+}
+
+.nav-menu ul li {
+  position: relative;
+  z-home: 999;
+  font-size: 13px;
+  color: black;
+  line-height: 64px;
+  right: -10%;
+}
+
+
+.nav-button .fa {
+  border: 5px solid white;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+
+.Me h1{
+  margin-top: 178px;
+  text-transform: uppercase;
+  font-family: trajan;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+span{
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-family: trajan;
+  color: honeydew;
+  font-weight: bold;
+
+}
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+  
+  
+  
+  <div class="nav-start">
+    <div class="nav-button">
+      <i class="fa fa-bars"></i>
+    </div>
+    <a class = "Home">
+    <div class="nav-menu">
+        <ul>
+          <li><a href = "index.html"><i class="fa fa-home"></i> Home </a></li>
+          <li><a href="home.html#Introduction"><i class="fa fa-user"></i> Introduction</a></li>
+          <li><a href="projects.html"><i class="fa fa-briefcase"></i> Projects</a></li>
+          <li><a href="achievements.html"><i class="fa fa-trophy"></i> Achievements</a></li>
+          
+      </ul>
+    </div>
+  </div>
+  <section class="Me">
+      <h1>Bryant's Portfolio<br> <span>Welcome to My Website<br></span></h1>
+  </section>
+
+
+<!-- JS !-->
+<script>
+var navButton = document.querySelector('.nav-button');
+var navMenu = document.querySelector('.nav-menu');
+var win = window;
+
+function openMenu(event) {
+  
+  navButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+}
+  
+function closeMenu(event) {
+  if (navButton.classList.contains('active')) {
+    navButton.classList.remove('active');
+    navMenu.classList.remove('active');
+  }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+win.addEventListener('click',closeMenu, false);
+    
+</script>
+</body>
+</html>
